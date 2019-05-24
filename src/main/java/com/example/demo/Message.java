@@ -14,7 +14,7 @@ public class Message {
 
     private String content;
 
-    private Date posteddate;
+    private String posteddate;
 
     private String sentby;
 
@@ -35,11 +35,11 @@ public class Message {
         this.content = content;
     }
 
-    public Date getPosteddate() {
+    public String getPosteddate() {
         return posteddate;
     }
 
-    public void setPosteddate(Date posteddate) {
+    public void setPosteddate(String posteddate) {
         this.posteddate = posteddate;
     }
 

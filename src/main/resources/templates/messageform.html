@@ -13,8 +13,8 @@
     content :<input type="text" th:field="*{content}" />
     <span th:if="${#fields.hasErrors('content')}"
           th:errors="*{content}"></span><br />
-    postdate :<input type="text" th:field="*{posteddate}" />
-    <span th:if="${#fields.hasErrors('postdate ')}"
+    posteddate :<input type="date" th:field="*{posteddate}" />
+    <span th:if="${#fields.hasErrors('posteddate')}"
           th:errors="*{posteddate}"></span><br />
     sentby :<input type="text" th:field="*{sentby}" />
     <span th:if="${#fields.hasErrors('sentby')}"
