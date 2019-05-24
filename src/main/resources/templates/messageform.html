@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-<form action="#"
-      th:action="@{/process}"
-      th:object="${message}"
-      method="post">
-    <input type="hidden" th:field="*{id}" />
+<form method="POST" action="/process" th:object="${message}"
+      enctype="multipart/form-data">
     content :<input type="text" th:field="*{content}" />
     <span th:if="${#fields.hasErrors('content')}"
           th:errors="*{content}"></span><br />
